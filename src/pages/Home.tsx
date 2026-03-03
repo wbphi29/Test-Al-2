@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Phone, Zap, ShieldCheck, Clock, CheckCircle2, Mail } from 'lucide-react';
+import { Phone, Zap, ShieldCheck, Clock, CheckCircle2, Mail, ArrowRight } from 'lucide-react';
 import { COMPANY_INFO, SERVICES } from '../constants';
 import { Link } from 'react-router-dom';
-import * as Icons from 'lucide-react';
 
 export const Home: React.FC = () => {
   return (
@@ -126,7 +125,6 @@ export const Home: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {SERVICES.map((s) => {
-              const IconComponent = (Icons as any)[s.icon];
               return (
                 <Link 
                   key={s.id} 
@@ -135,12 +133,11 @@ export const Home: React.FC = () => {
                 >
                   <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-8 group-hover:bg-brand-gradient transition-colors overflow-hidden relative">
                     <img src={s.image} alt={s.alt} width="64" height="64" className="w-full h-full object-cover opacity-20 group-hover:opacity-100 absolute inset-0" referrerPolicy="no-referrer" />
-                    <IconComponent className="w-8 h-8 text-primary-orange group-hover:text-white transition-colors relative z-10" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-4">{s.title}</h3>
                   <p className="text-slate-600 leading-relaxed mb-6">{s.description}</p>
                   <span className="inline-flex items-center gap-2 text-primary-orange font-bold group-hover:translate-x-2 transition-transform">
-                    En savoir plus <Icons.ArrowRight className="w-4 h-4" />
+                    En savoir plus <ArrowRight className="w-4 h-4" />
                   </span>
                 </Link>
               );
