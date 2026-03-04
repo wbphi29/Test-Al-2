@@ -59,7 +59,6 @@ export const Blog: React.FC = () => {
                     src={post.image} 
                     alt={post.title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute top-4 left-4 bg-brand-gradient text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
                     Conseils

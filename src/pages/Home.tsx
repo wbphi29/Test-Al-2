@@ -84,7 +84,6 @@ export const Home: React.FC = () => {
                   width="800"
                   height="1000"
                   className="w-full h-auto object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               {/* Decorative elements */}
@@ -137,7 +136,7 @@ export const Home: React.FC = () => {
                   className="group p-8 bg-slate-50 rounded-[2rem] border border-transparent hover:border-primary-orange/20 hover:bg-white hover:shadow-2xl transition-all duration-300"
                 >
                   <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-8 group-hover:bg-brand-gradient transition-colors overflow-hidden relative">
-                    <img src={s.image} alt={s.alt} width="64" height="64" className="w-full h-full object-cover opacity-20 group-hover:opacity-100 absolute inset-0" referrerPolicy="no-referrer" />
+                    <img src={s.image} alt={s.alt} width="64" height="64" className="w-full h-full object-cover opacity-20 group-hover:opacity-100 absolute inset-0" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-4">{s.title}</h3>
                   <p className="text-slate-600 leading-relaxed mb-6">{s.description}</p>
@@ -201,7 +200,6 @@ export const Home: React.FC = () => {
                   width="800"
                   height="1000"
                   className="w-full h-auto"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-10 -right-10 bg-white p-10 rounded-[2rem] shadow-2xl border border-slate-50 hidden sm:block">
@@ -265,7 +263,6 @@ export const Home: React.FC = () => {
                 src="/images/depannage-electrique-urgent.png" 
                 alt="Zones d'intervention AL Électricité à Bruxelles" 
                 className="w-full h-full object-cover opacity-50"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
               <div className="absolute bottom-10 left-10 right-10">

@@ -45,7 +45,6 @@ export const About: React.FC = () => {
                   src="/images/cablage-electrique-professionnel.png" 
                   alt="Équipe AL Électricité au travail" 
                   className="w-full h-auto"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>

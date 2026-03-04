@@ -72,7 +72,6 @@ export const ServicePage: React.FC = () => {
                   width="800"
                   height="1000"
                   className="w-full h-auto"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>
