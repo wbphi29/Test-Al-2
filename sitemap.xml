@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/a-propos</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/contact</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/blog</loc>
+    <priority>0.7</priority>
+  </url>
+  <!-- Services -->
+  <url><loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/services/installation-electrique</loc></url>
+  <url><loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/services/mise-en-conformite</loc></url>
+  <url><loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/services/depannage-electrique</loc></url>
+  <url><loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/services/renovation-electrique</loc></url>
+  <!-- Communes -->
+  <url><loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/electricien-uccle</loc></url>
+  <url><loc>https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/electricien-ixelles</loc></url>
+</urlset>
