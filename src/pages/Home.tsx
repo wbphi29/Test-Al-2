@@ -79,7 +79,7 @@ export const Home: React.FC = () => {
             >
               <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
                 <img 
-                  src="/images/cablage-electrique-professionnel.png" 
+                  src="https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-59.webp" 
                   alt="Électricien professionnel AL Électricité installant un tableau électrique à Bruxelles" 
                   width="800"
                   height="1000"
@@ -195,7 +195,7 @@ export const Home: React.FC = () => {
             <div className="relative">
               <div className="rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/mise-en-conformite-electrique.png" 
+                  src="https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-58.webp" 
                   alt="Électricien certifié AL Électricité effectuant un câblage professionnel à Ixelles" 
                   width="800"
                   height="1000"
@@ -260,7 +260,7 @@ export const Home: React.FC = () => {
             </div>
             <div className="relative h-[400px] rounded-[2.5rem] overflow-hidden border border-white/10">
               <img 
-                src="/images/depannage-electrique-urgent.png" 
+                src="https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-4.webp" 
                 alt="Zones d'intervention AL Électricité à Bruxelles" 
                 className="w-full h-full object-cover opacity-50"
               />

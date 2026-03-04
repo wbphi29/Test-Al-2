@@ -90,7 +90,7 @@ export const LocalPage: React.FC = () => {
             <div className="relative">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/depannage-electrique-urgent.png" 
+                  src="https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-4.webp" 
                   alt={`Dépannage électrique urgent à ${communeName} par AL Électricité`} 
                   width="800"
                   height="1000"

@@ -31,7 +31,7 @@ export const SEO: React.FC<SEOProps> = ({ title, description, canonical, type = 
       "@type": "City",
       "name": "Bruxelles"
     },
-    "image": "/images/depannage-electrique-urgent.png",
+    "image": "https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-4.webp",
     "priceRange": "$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

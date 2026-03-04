@@ -42,7 +42,7 @@ export const About: React.FC = () => {
             <div className="relative">
               <div className="rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/cablage-electrique-professionnel.png" 
+                  src="https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-59.webp" 
                   alt="Équipe AL Électricité au travail" 
                   className="w-full h-auto"
                 />
