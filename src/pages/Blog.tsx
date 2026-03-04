@@ -12,7 +12,7 @@ const BLOG_POSTS = [
     excerpt: "Tout ce que vous devez savoir pour réussir votre contrôle électrique RGIE et obtenir votre certificat de conformité sans stress.",
     date: "15 Février 2026",
     author: "AL Électricité",
-    image: "https://picsum.photos/seed/blog1/800/600"
+    image: "/images/mise-en-conformite-electrique.png"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const BLOG_POSTS = [
     excerpt: "Votre courant a sauté ? Voici les étapes de sécurité à suivre avant d'appeler votre électricien d'urgence à Bruxelles.",
     date: "10 Février 2026",
     author: "AL Électricité",
-    image: "https://picsum.photos/seed/blog2/800/600"
+    image: "/images/depannage-electrique-urgent.png"
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const BLOG_POSTS = [
     excerpt: "Avantages, coûts et primes disponibles pour l'installation d'une station de recharge pour véhicule électrique en Belgique.",
     date: "05 Février 2026",
     author: "AL Électricité",
-    image: "https://picsum.photos/seed/blog3/800/600"
+    image: "/images/cablage-electrique-professionnel.png"
   }
 ];
 

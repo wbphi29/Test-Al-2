@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Phone, Zap, ShieldCheck, Clock, CheckCircle2, Mail, ArrowRight } from 'lucide-react';
-import { COMPANY_INFO, SERVICES } from '../constants';
+import { Phone, Zap, ShieldCheck, Clock, CheckCircle2, Mail, ArrowRight, MapPin } from 'lucide-react';
+import { COMPANY_INFO, SERVICES, COMMUNES } from '../constants';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
 
@@ -234,6 +234,47 @@ export const Home: React.FC = () => {
                 <p className="text-slate-600 leading-relaxed">{faq.a}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zones d'intervention */}
+      <section className="py-20 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <h2 className="text-4xl font-black tracking-tight">Zones d'intervention à Bruxelles</h2>
+              <p className="text-slate-400 text-lg leading-relaxed">
+                Nous couvrons l'ensemble des 19 communes de la Région de Bruxelles-Capitale. Nos électriciens sont basés stratégiquement pour intervenir en moins de 30 minutes chez vous.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                {COMMUNES.map(c => (
+                  <Link 
+                    key={c} 
+                    to={`/electricien-${c.toLowerCase().replace(/ /g, '-')}`}
+                    className="text-sm font-bold text-slate-300 hover:text-primary-orange transition-colors flex items-center gap-2"
+                  >
+                    <MapPin className="w-3 h-3 text-primary-orange" />
+                    {c}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="relative h-[400px] rounded-[2.5rem] overflow-hidden border border-white/10">
+              <img 
+                src="/images/depannage-electrique-urgent.png" 
+                alt="Zones d'intervention AL Électricité à Bruxelles" 
+                className="w-full h-full object-cover opacity-50"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+              <div className="absolute bottom-10 left-10 right-10">
+                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                  <p className="text-2xl font-black mb-2">Intervention Rapide</p>
+                  <p className="text-slate-300 text-sm italic">Partout à Bruxelles, 24h/24 et 7j/7.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

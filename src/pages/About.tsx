@@ -42,7 +42,7 @@ export const About: React.FC = () => {
             <div className="relative">
               <div className="rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/electrician-team/800/1000" 
+                  src="/images/cablage-electrique-professionnel.png" 
                   alt="Équipe AL Électricité au travail" 
                   className="w-full h-auto"
                   referrerPolicy="no-referrer"

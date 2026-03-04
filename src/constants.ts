@@ -53,7 +53,7 @@ export const SERVICES = [
     slug: "tableaux-electriques",
     description: "Remplacement, extension et mise en sécurité de vos coffrets électriques avec du matériel de pointe.",
     icon: "Layout",
-    image: "https://picsum.photos/seed/fuse-box-install/800/600",
+    image: "/images/mise-en-conformite-electrique.png",
     alt: "Installation d'un nouveau tableau électrique avec disjoncteurs modernes"
   },
   {
@@ -62,7 +62,7 @@ export const SERVICES = [
     slug: "domotique",
     description: "Solutions intelligentes pour le contrôle automatisé de l'éclairage, du chauffage et de la sécurité de votre habitat.",
     icon: "Cpu",
-    image: "https://picsum.photos/seed/smart-home-electrical/800/600",
+    image: "/images/cablage-electrique-professionnel.png",
     alt: "Installation de modules domotiques dans un coffret électrique intelligent"
   },
   {
@@ -107,7 +107,7 @@ export const SERVICES = [
     slug: "bornes-de-recharge",
     description: "Installation professionnelle de stations de recharge pour véhicules électriques à domicile ou en entreprise.",
     icon: "BatteryCharging",
-    image: "https://picsum.photos/seed/ev-charger-install/800/600",
+    image: "/images/cablage-electrique-professionnel.png",
     alt: "Installation d'une borne de recharge pour voiture électrique dans un garage"
   },
   {
@@ -116,7 +116,7 @@ export const SERVICES = [
     slug: "mise-a-la-terre",
     description: "Installation et vérification de la boucle de terre pour assurer une protection maximale contre les électrocutions.",
     icon: "ArrowDownCircle",
-    image: "https://picsum.photos/seed/grounding-system/800/600",
+    image: "/images/mise-en-conformite-electrique.png",
     alt: "Mise en place d'un système de mise à la terre pour la sécurité électrique"
   },
   {
@@ -125,7 +125,7 @@ export const SERVICES = [
     slug: "certificat-conformite",
     description: "Accompagnement administratif et technique complet pour l'obtention de votre certificat électrique officiel.",
     icon: "FileText",
-    image: "https://picsum.photos/seed/electrical-certificate/800/600",
+    image: "/images/depannage-electrique-urgent.png",
     alt: "Dossier de certificat de conformité électrique pour une vente immobilière"
   },
 ];
