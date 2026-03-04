@@ -15,12 +15,14 @@ import { BlogPost } from './pages/BlogPost';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { SEO } from './components/SEO';
+import { ScrollToTop } from './components/ScrollToTop';
 import { COMMUNES } from './constants';
 
 export default function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <SEO 
             title="Électricien Bruxelles 24/7" 

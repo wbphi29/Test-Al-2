@@ -9,11 +9,20 @@ export const LocalPage: React.FC = () => {
   const { commune } = useParams<{ commune: string }>();
   const communeName = commune ? commune.charAt(0).toUpperCase() + commune.slice(1).replace(/-/g, ' ') : 'Bruxelles';
 
+  // Dynamic SEO variations
+  const seoTitle = communeName === 'Bruxelles' 
+    ? `Électricien Bruxelles 24/7 | Dépannage & Installation Électrique`
+    : `Électricien à ${communeName} | Dépannage Électrique Urgent 24/7`;
+  
+  const h1Title = communeName === 'Bruxelles'
+    ? `Électricité Générale à Bruxelles`
+    : `Électricien Agréé à ${communeName}`;
+
   return (
     <div className="flex flex-col">
       <SEO 
-        title={`Électricien à ${communeName}`} 
-        description={`Besoin d'un électricien à ${communeName} ? AL Électricité intervient rapidement pour dépannage, installation et mise en conformité. Service 24/7.`}
+        title={seoTitle} 
+        description={`Expert électricien à ${communeName}. Dépannage urgent 24h/24, installation, mise en conformité RGIE et rénovation électrique à ${communeName}. Devis gratuit et intervention rapide.`}
       />
 
       {/* Hero */}
@@ -28,17 +37,17 @@ export const LocalPage: React.FC = () => {
               Service de Proximité : {communeName}
             </div>
             <h1 className="text-5xl lg:text-7xl font-black tracking-tight leading-tight">
-              Électricien Agréé à <span className="text-brand-gradient">{communeName}</span>
+              {h1Title}
             </h1>
             <p className="text-xl text-slate-400 leading-relaxed">
               AL Électricité est votre partenaire local pour tous travaux électriques à {communeName}. Nous garantissons une intervention rapide en moins de 30 minutes pour vos urgences.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
-              <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="bg-brand-gradient text-white px-10 py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 shadow-2xl shadow-primary-orange/40">
+              <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="bg-brand-gradient text-white px-10 py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 shadow-2xl shadow-primary-orange/40 btn-hover-effect">
                 <Phone className="w-6 h-6" />
                 {COMPANY_INFO.phone}
               </a>
-              <a href={`mailto:${COMPANY_INFO.email}`} className="bg-white/5 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 hover:bg-white/10 transition-all">
+              <a href={`mailto:${COMPANY_INFO.email}`} className="bg-white/5 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 hover:bg-white/10 transition-all btn-hover-effect">
                 Contact Email
               </a>
             </div>
@@ -81,7 +90,7 @@ export const LocalPage: React.FC = () => {
             <div className="relative">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/electrician-troubleshooting/800/1000" 
+                  src="/images/depannage-electrique-urgent.png" 
                   alt={`Dépannage électrique urgent à ${communeName} par AL Électricité`} 
                   width="800"
                   height="1000"

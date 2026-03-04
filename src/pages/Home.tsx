@@ -3,10 +3,15 @@ import { motion } from 'motion/react';
 import { Phone, Zap, ShieldCheck, Clock, CheckCircle2, Mail, ArrowRight } from 'lucide-react';
 import { COMPANY_INFO, SERVICES } from '../constants';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 
 export const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
+      <SEO 
+        title="Électricien Bruxelles 24/7 | AL Électricité Dépannage Urgent"
+        description="AL Électricité : votre électricien agréé à Bruxelles. Dépannage urgent 24h/24, mise en conformité RGIE, installation et rénovation. Intervention rapide et devis gratuit."
+      />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center pt-20 pb-32 overflow-hidden">
         <div className="absolute inset-0 bg-slate-50 -z-10">
@@ -37,14 +42,14 @@ export const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a 
                   href={`tel:${COMPANY_INFO.phoneRaw}`} 
-                  className="bg-brand-gradient text-white px-8 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-2xl shadow-primary-orange/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                  className="bg-brand-gradient text-white px-8 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-2xl shadow-primary-orange/30 btn-hover-effect"
                 >
                   <Phone className="w-6 h-6" />
                   Appeler Maintenant
                 </a>
                 <a 
                   href={`mailto:${COMPANY_INFO.email}`} 
-                  className="bg-white text-slate-900 border-2 border-slate-100 px-8 py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-slate-50 transition-all"
+                  className="bg-white text-slate-900 border-2 border-slate-100 px-8 py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-slate-50 transition-all btn-hover-effect"
                 >
                   Demander un Devis par Email
                 </a>
@@ -74,7 +79,7 @@ export const Home: React.FC = () => {
             >
               <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
                 <img 
-                  src="https://picsum.photos/seed/electrician-panel-work/800/1000" 
+                  src="/images/cablage-electrique-professionnel.png" 
                   alt="Électricien professionnel AL Électricité installant un tableau électrique à Bruxelles" 
                   width="800"
                   height="1000"
@@ -191,7 +196,7 @@ export const Home: React.FC = () => {
             <div className="relative">
               <div className="rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/electrician-wiring-pro/800/1000" 
+                  src="/images/mise-en-conformite-electrique.png" 
                   alt="Électricien certifié AL Électricité effectuant un câblage professionnel à Ixelles" 
                   width="800"
                   height="1000"

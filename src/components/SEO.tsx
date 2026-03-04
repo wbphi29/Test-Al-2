@@ -31,7 +31,7 @@ export const SEO: React.FC<SEOProps> = ({ title, description, canonical, type = 
       "@type": "City",
       "name": "Bruxelles"
     },
-    "image": "https://picsum.photos/seed/electrician/800/600",
+    "image": "/images/depannage-electrique-urgent.png",
     "priceRange": "$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

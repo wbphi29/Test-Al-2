@@ -16,7 +16,7 @@ export const SERVICES = [
     slug: "installation-electrique",
     description: "Conception et mise en place de réseaux électriques complets pour nouvelles constructions et extensions à Bruxelles.",
     icon: "Zap",
-    image: "https://picsum.photos/seed/electrical-wiring-pro/800/600",
+    image: "/images/cablage-electrique-professionnel.png",
     alt: "Installation de câblage électrique professionnel dans un bâtiment neuf à Bruxelles"
   },
   {
@@ -25,7 +25,7 @@ export const SERVICES = [
     slug: "mise-en-conformite",
     description: "Remise aux normes RGIE complète de votre installation pour garantir un certificat de conformité positif.",
     icon: "ShieldCheck",
-    image: "https://picsum.photos/seed/electrical-panel-check/800/600",
+    image: "/images/mise-en-conformite-electrique.png",
     alt: "Vérification technique d'un tableau électrique pour mise en conformité RGIE"
   },
   {
@@ -35,7 +35,7 @@ export const SERVICES = [
     description: "Intervention d'urgence immédiate pour pannes de courant, courts-circuits et pannes de tableau à Bruxelles.",
     icon: "Clock",
     emergency: true,
-    image: "https://picsum.photos/seed/electrical-troubleshooting/800/600",
+    image: "/images/depannage-electrique-urgent.png",
     alt: "Électricien en train de diagnostiquer une panne sur un tableau électrique en urgence"
   },
   {
@@ -44,7 +44,7 @@ export const SERVICES = [
     slug: "renovation-electrique",
     description: "Modernisation complète des anciennes installations électriques pour plus de sécurité et d'efficacité énergétique.",
     icon: "Hammer",
-    image: "https://picsum.photos/seed/electrical-renovation/800/600",
+    image: "/images/renovation-electrique-cuisine.png",
     alt: "Rénovation de l'installation électrique d'une maison bruxelloise"
   },
   {
@@ -71,8 +71,35 @@ export const SERVICES = [
     slug: "eclairage-interieur-exterieur",
     description: "Conception et installation de systèmes d'éclairage LED intérieurs et extérieurs esthétiques et économiques.",
     icon: "Lightbulb",
-    image: "https://picsum.photos/seed/lighting-installation/800/600",
+    image: "/images/eclairage-interieur-design.png",
     alt: "Installation de luminaires LED design dans un salon à Bruxelles"
+  },
+  {
+    id: "parlophonie",
+    title: "Parlophonie & Vidéophonie",
+    slug: "parlophonie-videophonie",
+    description: "Installation et réparation de systèmes d'interphonie et vidéophonie pour sécuriser l'accès à votre bâtiment.",
+    icon: "PhoneCall",
+    image: "/images/parlophonie-videophonie-bruxelles.png",
+    alt: "Installation d'un système de vidéophonie moderne à Bruxelles"
+  },
+  {
+    id: "interphone",
+    title: "Installation Interphone",
+    slug: "installation-interphone",
+    description: "Solutions de contrôle d'accès par interphone pour maisons individuelles et copropriétés.",
+    icon: "Mic",
+    image: "/images/installation-interphone.png",
+    alt: "Électricien installant un interphone professionnel"
+  },
+  {
+    id: "detecteur-fumee",
+    title: "Détecteurs de fumée",
+    slug: "installation-detecteur-fumee",
+    description: "Installation de détecteurs de fumée obligatoires et conformes pour votre sécurité incendie.",
+    icon: "Bell",
+    image: "/images/installation-detecteur-fumee.png",
+    alt: "Pose d'un détecteur de fumée certifié au plafond"
   },
   {
     id: "bornes",

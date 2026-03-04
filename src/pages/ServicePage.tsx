@@ -54,11 +54,11 @@ export const ServicePage: React.FC = () => {
                 {service.description} Nous assurons un service professionnel, sécurisé et conforme aux normes RGIE pour tous vos besoins en {service.title.toLowerCase()}.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="bg-brand-gradient text-white px-8 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary-orange/20">
+                <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="bg-brand-gradient text-white px-8 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary-orange/20 btn-hover-effect">
                   <Phone className="w-6 h-6" />
                   Appeler un Expert
                 </a>
-                <a href={`mailto:${COMPANY_INFO.email}`} className="bg-white text-slate-900 border-2 border-slate-100 px-8 py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3">
+                <a href={`mailto:${COMPANY_INFO.email}`} className="bg-white text-slate-900 border-2 border-slate-100 px-8 py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 btn-hover-effect">
                   <Mail className="w-6 h-6" />
                   Email Direct
                 </a>

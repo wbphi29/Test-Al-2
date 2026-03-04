@@ -57,7 +57,7 @@ export const Header: React.FC = () => {
             <div className="hidden lg:flex items-center gap-4">
               <a 
                 href={`tel:${COMPANY_INFO.phoneRaw}`} 
-                className="bg-brand-gradient text-white px-6 py-3 rounded-full font-black text-sm flex items-center gap-2 shadow-lg hover:shadow-primary-orange/20 hover:-translate-y-0.5 transition-all"
+                className="bg-brand-gradient text-white px-6 py-3 rounded-full font-black text-sm flex items-center gap-2 shadow-lg btn-hover-effect"
               >
                 <Phone className="w-4 h-4" />
                 {COMPANY_INFO.phone}
