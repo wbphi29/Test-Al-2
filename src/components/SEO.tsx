@@ -11,7 +11,8 @@ interface SEOProps {
 
 export const SEO: React.FC<SEOProps> = ({ title, description, canonical, type = 'website' }) => {
   const siteTitle = `${title} | ${COMPANY_INFO.name}`;
-  const url = canonical || window.location.href;
+  const currentPath = window.location.pathname;
+  const url = canonical || `${COMPANY_INFO.baseUrl}${currentPath}`;
 
   const schemaData = {
     "@context": "https://schema.org",

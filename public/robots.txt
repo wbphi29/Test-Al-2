@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ais-pre-xgnov6fjzohtfely3qt7pd-513944414727.europe-west2.run.app/sitemap.xml
+Sitemap: https://alelectricite.be/sitemap.xml

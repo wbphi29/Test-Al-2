@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Zap, ShieldCheck, Clock, ArrowRight } from 'lucide-react';
-import { COMPANY_INFO, SERVICES } from '../constants';
+import { COMPANY_INFO, SERVICES, IMG_VERSION } from '../constants';
 import { SEO } from '../components/SEO';
 
 export const LocalPage: React.FC = () => {
@@ -90,7 +90,7 @@ export const LocalPage: React.FC = () => {
             <div className="relative">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-4.webp" 
+                  src={`https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-4.webp?v=${IMG_VERSION}`} 
                   alt={`Dépannage électrique urgent à ${communeName} par AL Électricité`} 
                   width="800"
                   height="1000"

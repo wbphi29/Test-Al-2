@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Calendar, User, ArrowRight, Zap, Phone } from 'lucide-react';
-import { COMPANY_INFO } from '../constants';
+import { COMPANY_INFO, IMG_VERSION } from '../constants';
 import { SEO } from '../components/SEO';
 
 const BLOG_POSTS = [
@@ -12,7 +12,7 @@ const BLOG_POSTS = [
     excerpt: "Tout ce que vous devez savoir pour réussir votre contrôle électrique RGIE et obtenir votre certificat de conformité sans stress.",
     date: "15 Février 2026",
     author: "AL Électricité",
-    image: "https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-5.webp"
+    image: `https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-5.webp?v=${IMG_VERSION}`
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const BLOG_POSTS = [
     excerpt: "Votre courant a sauté ? Voici les étapes de sécurité à suivre avant d'appeler votre électricien d'urgence à Bruxelles.",
     date: "10 Février 2026",
     author: "AL Électricité",
-    image: "https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-4.webp"
+    image: `https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Detection-incendie-4.webp?v=${IMG_VERSION}`
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const BLOG_POSTS = [
     excerpt: "Avantages, coûts et primes disponibles pour l'installation d'une station de recharge pour véhicule électrique en Belgique.",
     date: "05 Février 2026",
     author: "AL Électricité",
-    image: "https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-59.webp"
+    image: `https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-59.webp?v=${IMG_VERSION}`
   }
 ];
 

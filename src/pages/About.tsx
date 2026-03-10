@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Phone, CheckCircle2, Zap, ShieldCheck, Clock, Award, Users } from 'lucide-react';
-import { COMPANY_INFO, SERVICES, COMMUNES } from '../constants';
+import { COMPANY_INFO, SERVICES, COMMUNES, IMG_VERSION } from '../constants';
 import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
 
@@ -42,7 +42,7 @@ export const About: React.FC = () => {
             <div className="relative">
               <div className="rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-59.webp" 
+                  src={`https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-59.webp?v=${IMG_VERSION}`} 
                   alt="Équipe AL Électricité au travail" 
                   className="w-full h-auto"
                 />
