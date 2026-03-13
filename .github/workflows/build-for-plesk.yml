@@ -19,6 +19,8 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Build project
         run: npm run build
+      - name: Prerender static HTML
+        run: node prerender.mjs
       - name: Deploy build to deploy branch
         run: |
           git config --global user.name "github-actions"
