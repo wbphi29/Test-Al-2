@@ -5,6 +5,7 @@ import { Phone, Mail, ArrowLeft, CheckCircle2, Zap, Clock, ShieldCheck } from 'l
 import { COMPANY_INFO, SERVICES, COMMUNES } from '../constants';
 import { SEO } from '../components/SEO';
 import type { SsgOptions } from 'vite-plugin-ssg/utils';
+import * as Icons from 'lucide-react';
 
 export const ssgOptions: SsgOptions = {
   slug: 'services/installation-electrique',

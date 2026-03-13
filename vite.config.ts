@@ -2,6 +2,7 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
+import { ssgPlugin } from 'vite-plugin-ssg';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
@@ -10,11 +11,37 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       tailwindcss(),
+      ssgPlugin({
+        pages: [
+          'src/pages/Home.tsx',
+          'src/pages/Blog.tsx',
+          'src/pages/About.tsx',
+          'src/pages/Contact.tsx',
+          'src/pages/Zones.tsx',
+          'src/pages/LocalPage.tsx',
+          'src/pages/BlogPost.tsx',
+          'src/pages/ServicePage.tsx'
+        ],
+        config: {
+          outDir: 'dist',
+          baseUrl: '/',
+          html: {
+            lang: 'fr'
+          }
+        }
+      })
     ],
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
       emptyOutDir: true,
+      rollupOptions: {
+        output: {
+          entryFileNames: 'assets/main.js',
+          chunkFileNames: 'assets/main.js',
+          assetFileNames: 'assets/main.[ext]',
+        },
+      },
     },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
@@ -25,6 +52,8 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
+      // HMR is disabled in AI Studio via DISABLE_HMR env var.
+      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
