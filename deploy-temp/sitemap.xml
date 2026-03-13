@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://alelectricite.be/</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alelectricite.be/a-propos</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alelectricite.be/contact</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alelectricite.be/blog</loc>
+    <priority>0.7</priority>
+  </url>
+  <!-- Services -->
+  <url><loc>https://alelectricite.be/services/installation-electrique</loc></url>
+  <url><loc>https://alelectricite.be/services/mise-en-conformite</loc></url>
+  <url><loc>https://alelectricite.be/services/depannage-electrique</loc></url>
+  <url><loc>https://alelectricite.be/services/renovation-electrique</loc></url>
+  <!-- Communes -->
+  <url><loc>https://alelectricite.be/electricien-uccle</loc></url>
+  <url><loc>https://alelectricite.be/electricien-ixelles</loc></url>
+</urlset>
