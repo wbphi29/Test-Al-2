@@ -1,10 +1,10 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
+import { StrictMode } from 'react';
 import App from './App.tsx';
 import './index.css';
+import { ViteSSG } from 'vite-ssg/single-page';
 
-createRoot(document.getElementById('root')!).render(
+export const createApp = ViteSSG(
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 );

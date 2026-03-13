@@ -3,7 +3,13 @@ import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Zap, ShieldCheck, Clock, CheckCircle2 } from 'lucide-react';
 import { COMPANY_INFO, SERVICES, COMMUNES } from '../constants';
 import { SEO } from '../components/SEO';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
 import { Link } from 'react-router-dom';
+
+export const ssgOptions: SsgOptions = {
+  slug: 'contact',
+  routeUrl: '/contact',
+};
 
 export const Contact: React.FC = () => {
   return (

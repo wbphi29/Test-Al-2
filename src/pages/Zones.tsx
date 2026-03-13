@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight, Zap, Phone } from 'lucide-react';
 import { COMMUNES, COMPANY_INFO } from '../constants';
 import { SEO } from '../components/SEO';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
+
+export const ssgOptions: SsgOptions = {
+  slug: 'zones',
+  routeUrl: '/zones',
+};
 
 export const Zones: React.FC = () => {
   return (

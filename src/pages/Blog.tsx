@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { Calendar, User, ArrowRight, Zap, Phone } from 'lucide-react';
 import { COMPANY_INFO, IMG_VERSION } from '../constants';
 import { SEO } from '../components/SEO';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
 
 const BLOG_POSTS = [
   {
@@ -31,6 +32,11 @@ const BLOG_POSTS = [
     image: `https://sos-electricite-bruxelles.be/wp-content/uploads/2026/02/Design-sans-titre-59.webp?v=${IMG_VERSION}`
   }
 ];
+
+export const ssgOptions: SsgOptions = {
+  slug: 'blog',
+  routeUrl: '/blog',
+};
 
 export const Blog: React.FC = () => {
   return (

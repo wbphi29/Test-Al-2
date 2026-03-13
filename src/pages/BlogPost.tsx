@@ -3,6 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Phone, Mail, Zap, Clock } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { SEO } from '../components/SEO';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
+
+export const ssgOptions: SsgOptions = {
+  slug: 'blog/mise-en-conformite-electrique-bruxelles-guide-2026',
+  routeUrl: '/blog/1',
+};
 
 export const BlogPost: React.FC = () => {
   return (

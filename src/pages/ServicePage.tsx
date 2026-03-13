@@ -4,7 +4,12 @@ import { motion } from 'motion/react';
 import { Phone, Mail, ArrowLeft, CheckCircle2, Zap, Clock, ShieldCheck } from 'lucide-react';
 import { COMPANY_INFO, SERVICES, COMMUNES } from '../constants';
 import { SEO } from '../components/SEO';
-import * as Icons from 'lucide-react';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
+
+export const ssgOptions: SsgOptions = {
+  slug: 'services/installation-electrique',
+  routeUrl: '/services/installation-electrique',
+};
 
 export const ServicePage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();

@@ -3,7 +3,13 @@ import { motion } from 'motion/react';
 import { Phone, CheckCircle2, Zap, ShieldCheck, Clock, Award, Users } from 'lucide-react';
 import { COMPANY_INFO, SERVICES, COMMUNES, IMG_VERSION } from '../constants';
 import { SEO } from '../components/SEO';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
 import { Link } from 'react-router-dom';
+
+export const ssgOptions: SsgOptions = {
+  slug: 'a-propos',
+  routeUrl: '/a-propos',
+};
 
 export const About: React.FC = () => {
   return (

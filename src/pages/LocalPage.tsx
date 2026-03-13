@@ -2,8 +2,14 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Zap, ShieldCheck, Clock, ArrowRight } from 'lucide-react';
-import { COMPANY_INFO, SERVICES, IMG_VERSION } from '../constants';
+import { COMPANY_INFO, SERVICES, IMG_VERSION, COMMUNES } from '../constants';
 import { SEO } from '../components/SEO';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
+
+export const ssgOptions: SsgOptions = {
+  slug: 'electricien-bruxelles',
+  routeUrl: '/electricien-bruxelles',
+};
 
 export const LocalPage: React.FC = () => {
   const { commune } = useParams<{ commune: string }>();

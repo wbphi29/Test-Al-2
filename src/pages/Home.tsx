@@ -4,6 +4,12 @@ import { Phone, Zap, ShieldCheck, Clock, CheckCircle2, Mail, ArrowRight, MapPin 
 import { COMPANY_INFO, SERVICES, COMMUNES, IMG_VERSION } from '../constants';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
+import type { SsgOptions } from 'vite-plugin-ssg/utils';
+
+export const ssgOptions: SsgOptions = {
+  slug: 'index',
+  routeUrl: '/',
+};
 
 export const Home: React.FC = () => {
   return (
